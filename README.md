@@ -24,10 +24,17 @@ $ npm install -g bower
 $ npm install -g grunt-cli
 ```
 
+##Cloning this repository 
+This repository has all the node modules already installed. All you need to do now is clone it before running the application. 
+
+``` bash
+$ sudo git clone https://github.com/oolawo09/Threshold
+``` 
+
 ## Running Your Application
 After the install process is over, you'll be able to run your application using Grunt, just run grunt default task:
 
-```
+``` bash
 $ grunt
 ```
 
