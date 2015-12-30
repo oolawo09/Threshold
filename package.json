@@ -1,18 +1,9 @@
 {
-<<<<<<< Updated upstream
-  "name": "meanjs",
-  "description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js.",
-  "version": "0.4.1",
-  "meanjs-version": "0.4.1",
-  "private": false,
-  "author": "https://github.com/meanjs/mean/graphs/contributors",
-=======
   "name": "threshold",
   "description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
   "version": "0.0.0",
   "meanjs-version": "0.4.0",
   "author": "Threshold",
->>>>>>> Stashed changes
   "license": "MIT",
   "engines": {
     "node": ">=0.10.28",

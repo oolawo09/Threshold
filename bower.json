@@ -1,14 +1,11 @@
 {
-<<<<<<< Updated upstream
   "name": "meanjs",
   "description": "Fullstack JavaScript with MongoDB, Express, AngularJS, and Node.js.",
   "homepage": "http://meanjs.org/",
   "license": "MIT",
-=======
   "name": "threshold",
   "version": "0.0.0",
   "description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
->>>>>>> Stashed changes
   "dependencies": {
     "bootstrap": "~3",
     "angular": "~1.3",
