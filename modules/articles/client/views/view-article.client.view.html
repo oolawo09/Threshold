@@ -18,5 +18,15 @@
       <span ng-bind="article.user.displayName"></span>
     </em>
   </small>
-  <p class="lead" ng-bind="article.content"></p>
+  <md-content>
+    <div layout="row" layout-xs="column">
+      <div flex>
+        <p class="lead" ng-bind="article.content"></p>
+      </div>
+      <div flex>
+       <p class="lead" ng-bind="article.content"></p>
+    </div>
+    </div>
+  </md-content>
+
 </section>
