@@ -10,6 +10,7 @@
   <meta name="fragment" content="!">
 
   <!-- Apple META -->
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
@@ -36,23 +37,28 @@
 </head>
 
 <body class="ng-cloak">
-  <header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
-  <section class="content">
-    <section class="container">
+  <div layout="column" layout-fill>
+    <md-content>
+      <md-toolbar class="md-scroll-shrink">
+      <header data-ng-include="'/modules/core/client/views/header.client.view.html'" class="md-toolbar-tools"></header>
+    </md-toolbar>
+  </md-content>
+    <md-content class="md-padding">
       {% block content %}{% endblock %}
-    </section>
-  </section>
+    </md-content>
+  </div>
+
 
   <!--Embedding The User Object-->
   <script type="text/javascript">
     var user = {{ user | json | safe }};
   </script>
-  
+
   <!--Load The Socket.io File-->
   <script type="text/javascript" src="/socket.io/socket.io.js"></script>
 
   <!--Application JavaScript Files-->
-  {% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %} 
+  {% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %}
 
   {% if livereload %}
   <!--Livereload script rendered -->
