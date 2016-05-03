@@ -19,6 +19,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
       var article = new Articles({
         title: this.title,
         content: this.content,
+        fragment: this.fragment,
       });
 
       console.log($scope.fragment);
@@ -30,6 +31,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
         // Clear form fields
         $scope.title = '';
         $scope.content = '';
+        $scope.fragment = '';
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;
       });
