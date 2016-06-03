@@ -24,7 +24,12 @@
         <p class="lead" ng-bind="article.content"></p>
       </div>
       <div flex>
-        <p class="lead" ng-bind="article.fragment"></p>
+        <div ng-repeat="fragment in article.fragments">
+            <p> {{fragment}} </p> </br>
+        </div>
+        <div ng-repeat="fragmentType in article.fragmentTypes">
+            <p> {{fragmentType}} </p> </br>
+        </div>
       </div>
     </div>
   </md-content>

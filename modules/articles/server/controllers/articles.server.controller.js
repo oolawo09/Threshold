@@ -41,8 +41,8 @@ exports.update = function (req, res) {
 
   article.title = req.body.title;
   article.content = req.body.content;
-  article.fragment = req.body.fragment;
-  article.fragments.push(req.body.fragment)
+  article.fragments.push(req.body.fragment);
+  article.fragmentTypes.push(req.body.fragmentType);
 
   article.save(function (err) {
     if (err) {

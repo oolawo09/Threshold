@@ -25,12 +25,10 @@ var ArticleSchema = new Schema({
     default: '',
     trim: true
   },
-  fragment: {
-    type: String,
-    default: '',
-    trim: true
-  },
   fragments: [
+    {type: String, default: '', trim: true}
+  ],
+  fragmentTypes : [
     {type: String, default: '', trim: true}
   ],
   user: {

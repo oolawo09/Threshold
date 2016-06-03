@@ -20,9 +20,9 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
         title: this.title,
         content: this.content,
         fragment: this.fragment,
+        fragmentType: this.fragmentType,
       });
 
-      console.log($scope.fragment);
 
       // Redirect after save
       article.$save(function (response) {

@@ -16,9 +16,18 @@
           <label for="content">Content</label>
           <textarea name="content" ng-model="article.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
         </div>
-        <div class="form-group">
+        <div class="form-group" ng-repeat="f in article.fragments">
           <label for="fragment">Fragment</label>
           <textarea name="content" ng-model="article.fragment" id="content" class="form-control" cols="30" rows="10" placeholder="Fragment"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="fragment">New Fragment</label>
+          <textarea name="content" ng-model="article.fragment" id="content" class="form-control" cols="30" rows="10" placeholder="Fragment"></textarea>
+          <input type="radio" ng-model="article.fragmentType" name="fragmentType" value="text" checked> Text<br>
+          <input type="radio" ng-model="article.fragmentType" name="fragmentType" value="link"> Link<br>
+          <input type="radio" ng-model="article.fragmentType" name="fragmentType" value="audio"> Audio<br>
+          <input type="radio" ng-model="article.fragmentType" name="fragmentType" value="video"> Video<br>
+          <input type="radio" ng-model="article.fragmentType" name="fragmentType" value="image"> Image<br>
         </div>
         <div class="form-group">
           <input type="submit" value="Update" class="btn btn-default">
